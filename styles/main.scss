@@ -1,0 +1,102 @@
+$light: #ffffff;
+$dark: #141414;
+$green: #c5f82a;
+$grey: #333333;
+$darkgrey: #1f1f1f;
+
+// Font
+font-face {
+  font-family: "Inter";
+  src: url("../assets/fonts/static/Inter-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+font-face {
+  font-family: "Inter";
+  src: url("../assets/fonts/static/Inter-SemiBold.ttf");
+  font-weight: bolder;
+  font-style: normal;
+}
+font-face {
+  font-family: "Inter";
+  src: url("../assets/fonts/static/Inter-Bold.ttf");
+  font-weight: bold;
+  font-style: normal;
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+.container {
+  width: 100%;
+  height: 100vh;
+  background-color: $dark;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: Inter, "Arial Narrow Bold", sans-serif;
+  .user {
+    width: 320px;
+    background-color: $darkgrey;
+    padding: 1.5rem 1rem;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .user--avatar {
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+  }
+  .user--name {
+    font-size: 22px;
+    font-weight: normal;
+    color: $light;
+    margin: 1.5rem 0rem;
+    margin-bottom: 0.5rem;
+  }
+  .user--location {
+    font-weight: bold;
+    color: $green;
+    font-size: 14px;
+    margin-bottom: 1.5rem;
+  }
+  .user--position {
+    font-size: 14px;
+    color: $light;
+    margin-bottom: 1.5rem;
+  }
+  .user--social {
+    a {
+      display: block;
+      margin: 0.5rem 0rem;
+      width: 255px;
+      border-radius: 10px;
+      text-align: center;
+      padding: 1rem 0rem;
+      font-size: 14px;
+      color: $light;
+      text-decoration: none;
+      background-color: $grey;
+      font-weight: bold;
+      &:hover {
+        background-color: $green;
+        color: $dark;
+      }
+    }
+  }
+  .attribution {
+    font-size: 12px;
+    margin-top: 0.8rem;
+    text-align: center;
+    a {
+      text-decoration: none;
+      color: hsl(228, 45%, 44%);
+    }
+  }
+}
